@@ -12,7 +12,7 @@ def generate_password(length):
 
 while True: #loop
     try:
-        lenght  = int(input("Tamanho da Password: "))
+        lenght  = int(input("Password Size: "))
         # pergunta a pessoa que esta a criar a password qual ira ser o tamanho da mesma
         
         password = generate_password(lenght)
@@ -21,11 +21,11 @@ while True: #loop
         
     except ValueError:
         # Escrever exit para sair ou então meter um número de tamanho da password
-        user_input = input("Introduza um número válido ou escreva exit para sair: ")
+        user_input = input("Input a valid number or type exit: ")
         
         # escrever exit opara sair
         if user_input.lower() == 'exit':
-            print("Adeus!")
+            print("Bye!")
             break
         else:
-            print("Introduza um número válido.")
+            print("Input a valid number.")
